@@ -1,0 +1,12 @@
+/node_modules/**
+/dist/*
+/public/*
+/docs/*
+/types/*
+/vite/*
+vite.config.ts
+.local
+.output.js
+**/*.svg
+**/*.sh
+**/*.md

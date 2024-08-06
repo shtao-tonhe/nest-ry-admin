@@ -1,0 +1,460 @@
+/*
+ * 仿 tailwind静态原子样式文件,名称内容大致对应(一个类名只包含一个样式)
+ * 部分自定义内容，可自由拓展 
+*/
+
+/* color颜色--字体 */
+.color-black {
+  --un-text-opacity: 1;
+  color: rgb(0 0 0 / var(--un-text-opacity));
+}
+.color-3 {
+  color: #333333;
+}
+.color-6 {
+  color: #666666;
+}
+.color-9 {
+  color: #999999;
+}
+.color-white {
+  --un-text-opacity: 1;
+  color: rgb(255 255 255 / var(--un-text-opacity));
+}
+
+/* bg颜色--背景 */
+.bg-black {
+  --un-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--un-bg-opacity));
+}
+.bg-white {
+  --un-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--un-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* font-size--字体大小 */
+.font-size-12px {
+  font-size: 12px;
+}
+.font-size-16px {
+  font-size: 16px;
+}
+.font-size-18px {
+  font-size: 18px;
+}
+.font-size-20px {
+  font-size: 20px;
+}
+.font-size-28px {
+  font-size: 28px;
+}
+.font-size-32px {
+  font-size: 32px;
+}
+
+
+/* font-weight--字体加粗 */
+.font-bold {
+  font-weight: 700;
+}
+
+
+/* border--边框 */ 
+.border-dashed {
+  border-style: dashed;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-none {
+  border-style: none;
+}
+.border-rounded-0{
+	border-radius: 0;
+}
+.border-rounded-1{
+	border-radius: 0.25rem;
+}
+.border-rounded-2{
+	border-radius: 0.5rem;
+}
+.border-rounded-4{
+	border-radius: 1rem;
+}
+.border-rounded-8{
+	border-radius: 2rem;
+}
+.border-rounded-50{
+	border-radius: 50%;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-l {
+  border-left-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-0 {
+  border-top-width: 0;
+}
+.border-1 {
+  border-width: 1px;
+}
+.border-transparent {
+  border-color: transparent;
+}
+.border-color-1{
+	border-color: $uni-border-color;
+}
+
+
+/* text-align--对齐 */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+/* felx--布局 */
+.flex {
+  display: flex;
+}
+.flex-inline {
+  display: inline-flex;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.flex-justify-stretch {
+  justify-content: stretch;
+}
+.justify-stretch {
+  justify-content: stretch;
+}
+.flex-content-center {
+  align-content: center;
+}
+.content-center {
+  align-content: center;
+}
+.flex-content-start {
+  align-content: flex-start;
+}
+.content-start {
+  align-content: flex-start;
+}
+.flex-content-end {
+  align-content: flex-end;
+}
+.content-end {
+  align-content: flex-end;
+}
+.flex-content-between {
+  align-content: space-between;
+}
+.content-between {
+  align-content: space-between;
+}
+.flex-content-around {
+  align-content: space-around;
+}
+.content-around {
+  align-content: space-around;
+}
+.flex-items-start {
+  align-items: flex-start;
+}
+.items-start {
+  align-items: flex-start;
+}
+.flex-items-end {
+  align-items: flex-end;
+}
+.items-end {
+  align-items: flex-end;
+}
+.flex-items-center {
+  align-items: center;
+}
+.items-center {
+  align-items: center;
+}
+.flex-items-stretch {
+  align-items: stretch;
+}
+.items-stretch {
+  align-items: stretch;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-none {
+  flex: none;
+}
+.flex-auto {
+  flex: 1 1 auto;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+/* line-height--行高 */
+.line-height-0 {
+  line-height: 0;
+}
+.line-height-1 {
+  line-height: 0.25rem;
+}
+.line-height-2 {
+  line-height: 0.5rem;
+}
+.line-height-4 {
+  line-height: 1rem;
+}
+.line-height-8 {
+  line-height: 2rem;
+}
+
+/* height--高度 */
+.h-full {
+  height: 100%;
+}
+.h-100vw {
+  height: 100vw;
+}
+
+/* width --宽度 */
+.w-full {
+  width: 100%;
+}
+.w-100vw {
+  width: 100vw;
+}
+
+/* position --定位 */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+/* float--浮动 */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* 外边距 */
+.m-0{
+	margin: 0;
+}
+.m-4px{
+	margin: 4px;
+}
+.m-8px{
+	margin: 8px;
+}
+.m-16px{
+	margin: 16px;
+}
+.m-24px{
+	margin: 24px;
+}
+.ml-0{
+	margin-left: 0;
+}
+.ml-4px{
+	margin-left: 4px;
+}
+.ml-8px{
+	margin-left: 8px;
+}
+.ml-16px{
+	margin-left: 16px;
+}
+.ml-24px{
+	margin-left: 24px;
+}
+.mr-0{
+	margin-right: 0;
+}
+.mr-4px{
+	margin-right: 4px;
+}
+.mr-8px{
+	margin-right: 8px;
+}
+.mr-16px{
+	margin-right: 16px;
+}
+.mr-24px{
+	margin-right: 24px;
+}
+.mt-0{
+	margin-top: 0;
+}
+.mt-4px{
+	margin-top: 4px;
+}
+.mt-8px{
+	margin-top: 8px;
+}
+.mt-16px{
+	margin-top: 16px;
+}
+.mt-24px{
+	margin-top: 24px;
+}
+.mb-0{
+	margin-bottom: 0;
+}
+.mb-4px{
+	margin-bottom: 4px;
+}
+.mb-8px{
+	margin-bottom: 8px;
+}
+.mb-16px{
+	margin-bottom: 16px;
+}
+.mb-24px{
+	margin-bottom: 24px;
+}
+/* 内边距 */
+.p-0 {
+  padding: 0;
+}
+.p-4px {
+  padding: 4px;
+}
+.p-8px {
+  padding: 8px;
+}
+.p-16px {
+  padding: 16px;
+}
+.p-24px {
+  padding: 24px;
+}
+.pl-0 {
+  padding-left: 0;
+}
+.pl-4px {
+  padding-left: 4px;
+}
+.pl-8px {
+  padding-left: 8px;
+}
+.pl-16px {
+  padding-left: 16px;
+}
+.pl-24px {
+  padding-left: 24px;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.pr-4px {
+  padding-right: 4px;
+}
+.pr-8px {
+  padding-right: 8px;
+}
+.pr-16px {
+  padding-right: 16px;
+}
+.pr-24px {
+  padding-right: 24px;
+}
+.pt-0 {
+  padding-top: 0;
+}
+.pt-4px {
+  padding-top: 4px;
+}
+.pt-8px {
+  padding-top: 8px;
+}
+.pt-16px {
+  padding-top: 16px;
+}
+.pt-24px {
+  padding-top: 24px;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-4px {
+  padding-bottom: 4px;
+}
+.pb-8px {
+  padding-bottom: 8px;
+}
+.pb-16px {
+  padding-bottom: 16px;
+}
+.pb-24px {
+  padding-bottom: 24px;
+}

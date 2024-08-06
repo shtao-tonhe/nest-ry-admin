@@ -1,0 +1,56 @@
+/*
+ * 组合样式类(一个类名包含一组小样式功能)
+ * 可自由拓展 
+*/
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* flex 居中布局 */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 单行溢出隐藏 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 多行溢出隐藏 */
+.ellipsise {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 文本换行两端对齐首行缩进 */
+.text-paragraph{
+	text-indent: 2em;
+	text-align: justify;
+	text-wrap: wrap;
+}

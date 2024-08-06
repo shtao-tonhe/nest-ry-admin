@@ -1,0 +1,11 @@
+/node_modules/**
+/dist/*
+/public/*
+/types/*
+/docs/**/*
+/vite/*
+pnpm-lock.yaml
+.auto-generate/*
+*.js
+*.cjs
+.gitignore
